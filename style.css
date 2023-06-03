@@ -12,7 +12,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: #3a8aac;
 }
 header {
     position: relative;
@@ -23,14 +22,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #101828;
 }
 header .logo {
     position: relative;
-    max-width: 80px;
+    max-width: 70px;
 }
 header .navigation a {
-    color: #000;
+    color: #fcfcfc;
     font-weight: 500;
+    font-size: 18px;
     margin-left: 40px;
     letter-spacing: 1px;
     padding: 2px 15px;
@@ -45,6 +46,7 @@ header .navigation a:not(:last-child){
 }
 header .navigation a:hover {
     background: #fff;
+    color: #101828;
 }
 .content {
     position: relative;
@@ -53,24 +55,24 @@ header .navigation a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 .content .textBox {
     position: relative;
     max-width: 500px;
 }
 .content .textBox h2 {
-    color: #2459c2;
+    color: #0052FC;
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .content .textBox h2 span {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 600;
+    color: #101828;
+    font-weight: 700;
 }
 .content .textBox p {
     font-size: 16px;
@@ -84,13 +86,17 @@ header .navigation a:hover {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 40px;
     transition: 0.3s;
     transition-property: background;
 }
 .content .textBox a:hover{
-    background: #0c4f60;
+    background: #07245c;
+}
+.content .imgBox img {
+    width: 100%;
+    min-width: 350px;
 }
 .media-icons{
     display: flex;
@@ -132,11 +138,12 @@ label{
         display: block;
         font-size: 25px;
         cursor: pointer;
+        color: #fff;
         transition: 0.3s;
         transition-property: color;
     }
     label:hover{
-        color: #fff;
+        color: #1f4a9f;
     }
 
     label .close-btn {
@@ -180,10 +187,23 @@ label{
 
     .content .textBox h2 span{
         font-size: 40px;
-        font-weight: 600;
+        font-weight: 700;
     }
     .content .textBox p {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 850px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content .textBox{
+        width: 100%;
+    }
+    .content .imgBox img{
+        width: 100%;
     }
 }
 
@@ -194,7 +214,7 @@ label{
     }
     .content .textBox h2 span{
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 700;
     }
     .content .textBox p {
         font-size: 14px;
