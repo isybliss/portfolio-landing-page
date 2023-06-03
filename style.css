@@ -8,7 +8,6 @@
 section {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,7 +17,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 100px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,6 +127,42 @@ label{
     display: none;
 }
 
+/************ Features section **************/
+.feature{
+    background: #101828;
+    color: #fcfcfc;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sub-feature {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.sub-feature img {
+    width: 50%;
+    height: 150px;
+}
+.sub-feature .textBox h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sub-feature .textBox p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
 /***Responsive styles****/
 
 @media (max-width: 960px) {
@@ -192,6 +227,13 @@ label{
     .content .textBox p {
         font-size: 16px;
     }
+    .sub-feature .textBox h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .sub-feature .textBox p {
+        font-size: 14px;
+    }
 
 }
 @media (max-width: 850px) {
@@ -204,6 +246,24 @@ label{
     }
     .content .imgBox img{
         width: 100%;
+    }
+    .feature {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .sub-feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-feature .textBox h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+    .sub-feature .textBox p {
+        font-size: 14px;
     }
 }
 
