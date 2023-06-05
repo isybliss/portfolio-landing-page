@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="css/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -36,40 +41,68 @@
             </div>
         </div>
     </section>
-    <div class="feature" id="feature">
-        <div class="sub-feature">
-            <img src="images/register_img.jpg" alt="">
-            <div class="textBox">
-                <h3>User Registration and Login</h3>
-                <p>Users can create an account by providing their name, email address and password.
-                The email address and password provided is used to log into the CGPA calculator</p>
+    <div class="container" id="feature">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+    
+                            <div class="card-image">
+                                <img src="images/register_img.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Register Users</h2>
+                            <p class="description">Users can create an account by providing their name, email address and password.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+    
+                            <div class="card-image">
+                                <img src="images/login_img.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Login Users</h2>
+                            <p class="description">The email address and password provided is used to log into the CGPA calculator</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+    
+                            <div class="card-image">
+                                <img src="images/course_manage_img.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Course Management</h2>
+                            <p class="description">Users can add, edit and delte courses. Each course entry include information such 
+                                as course code, course title, course unit and grade. These details are used to calculate the Grade Point Average</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="sub-feature">
-            <img src="images/dashboard_img.jpg" class="dashboard-img" alt="">
-            <div class="textBox">
-                <h3>Dashboard</h3>
-                <p>Users are presented with a dashboard that displays their personal information,
-                academic details and navigation links to different sections</p>
-            </div>
-        </div>
-        <div class="sub-feature">
-            <img src="images/course_manage_img.jpg" alt="">
-            <div class="textBox">
-                <h3>Course Management</h3>
-                <p>Users can add, edit and delte courses. Each course entry include information such 
-                as course code, course title, course unit and grade. These details are used to calculate the Grade Point Average</p>
-            </div>
-            
-        </div>
-        <div class="feature1"></div>
-        <div class="feature1"></div>
     </div>
+    
     <div class="media-icons">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
 </body>
+
+<!--Swiper Js-->
+<script src="js/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+
+<!--Javascript-->
+<script src="js/script.js"></script>
 </html>

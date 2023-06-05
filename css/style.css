@@ -126,41 +126,111 @@ label{
     z-index: 3;
     display: none;
 }
-
-/************ Features section **************/
-.feature{
-    background: #101828;
-    color: #fcfcfc;
-    padding: 30px 50px;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.sub-feature {
-    padding: 20px;
-    text-align: center;
+/**************FEATURES USING CARD SLIDER*******************/
+.container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    background-color: #efefef;
 }
-
-.sub-feature img {
-    width: 50%;
-    height: 150px;
+.slide-container{
+    max-width: 1120px;  
+    width: 100%;
+    padding: 40px 0;
 }
-.sub-feature .textBox h3 {
-    font-size: 20px;
-    text-transform: uppercase;
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+.card-image{
+    position: relative;
+    height: 300px;
+    width: 220px;
+    border-radius: 15%;
+    background: #fff;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
     font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.description{
+    font-size: 15px;
+    color: #707070;
     text-align: center;
 }
-.sub-feature .textBox p {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 40px;
+.swiper-navBtn{
+    color: #6e93f7;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #6e93f7;
+    opacity: 1; 
+}
+.swiper-pagination-bullet-active{
+    background-color: #4070f4;
 }
 
 /***Responsive styles****/
@@ -227,15 +297,8 @@ label{
     .content .textBox p {
         font-size: 16px;
     }
-    .sub-feature .textBox h3 {
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-    .sub-feature .textBox p {
-        font-size: 14px;
-    }
-
 }
+
 @media (max-width: 850px) {
     .content {
         display: flex;
@@ -246,28 +309,19 @@ label{
     }
     .content .imgBox img{
         width: 100%;
-    }
-    .feature {
-        display: grid;
-        grid-template-columns: auto;
-    }
+    }   
+}
 
-    .sub-feature {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
     }
-
-    .sub-feature .textBox h3 {
-        font-size: 16px;
-        margin-bottom: 7px;
-    }
-    .sub-feature .textBox p {
-        font-size: 14px;
+    .swiper-navBtn{
+        display: none;
     }
 }
 
-@media (max-width: 560px){
+@media (max-width: 560px) {
     .content .textBox h2 {
         font-size: 35px;
         line-height: 40px;
