@@ -9,11 +9,14 @@
     <!--Swiper CSS-->
     <link rel="stylesheet" href="css/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
 
+    <!--Boxicons CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body>  
     <section>
         <div class="circle"></div>
         <input type="checkbox" id="check">
@@ -41,7 +44,7 @@
             </div>
         </div>
     </section>
-    <div class="container" id="feature">
+    <div class="feature-container" id="feature">
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
@@ -92,11 +95,88 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <div class="testimonial-container">
+        <div class="testimonial swiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="images/about-photo/dt.jpg" alt="" class="image">
+                    <p>A passionate python backend developer with expertise in building impactful software solutions.
+                        Skilled in backend technologies, including Django and Flask, I excel in solving complex
+                        problems and delivering high-quality results. Let's collaborate to bring your ideas to life
+                        and shape a better future through the power of software.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Dominic Abakpa</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/about-photo/isy.jpg" alt="" class="image">
+                    <p>A practising Pharmacist and a frontend web develope with experience in HTML, CSS and Javascript.
+                        I am passionate about using software technologies to solving problems and improving the quality of living.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Isioma Umunna</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
     
+    <!--
+    <div class="hero">
+        <h1>About</h1>
+
+        <div class="about-container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>A passionate python backend developer with expertise in builfing impactful software solutions.
+                                Skilled in backend technologies, including Django and Flask, I excel in solving complex
+                                problems and delivering high-quality results. Let's collaborate to bring your ideas to life
+                                and shape a better future through the power of software.
+                            </p>
+                            <h3>Dominic</h3>
+                            <P>Backend developer</P>
+                        </div>
+                        <div class="user-img">
+                            <img src="images/about-photo/dt.jpg" alt="">
+                        </div>
+                    </div>
+                    <div c lass="slide-col">
+                        <div class="user-text">
+                            <p>A passionate python backend developer with expertise in builfing impactful software solutions.
+                                Skilled in backend technologies, including Django and Flask, I excel in solving complex
+                                problems and delivering high-quality results. Let's collaborate to bring your ideas to life
+                                and shape a better future through the power of software.
+                            </p>
+                            <h3>Isioma</h3>
+                            <P>Frontend developer</P>
+                        </div>
+                        <div class="user-img">
+                            <img src="images/about-photo/isy.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
     <div class="media-icons">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
     </div>
 </body>
 
